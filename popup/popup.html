@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>UrlNet</title>
+    <script src = "../jquery.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h1>Phishing Detection</h1>
+    <div id="site-name">Site Name: HERE</div>
+
+    <div
+      id="circle-container"
+      style="display: flex; justify-content: center; margin-top: 15px"
+    >
+      <div id="circle">
+        <span id="phishing-percent" style="font-size: 20px">0%</span>
+      </div>
+    </div>
+    <div id="result">Phishing Status: Checking...</div>
+
+    <div id="detail">
+      <a href="https://google.com">
+        <b>See more</b>
+      </a>
+    </div>
+    <script src = "popup.js"></script>
+  </body>
+</html>
