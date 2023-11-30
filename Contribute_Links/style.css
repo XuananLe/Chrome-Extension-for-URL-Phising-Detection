@@ -1,0 +1,46 @@
+body {
+    box-sizing: border-box;
+    background-image: url("background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+  }
+  .container {
+    padding: 30px;
+    border-radius: 5px;
+  }
+  .form-group label {
+    font-weight: bold;
+  }
+  #result {
+    margin-top: 20px;
+  }
+  .btn.btn-primary.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #url-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin-top: 30px;
+  }
+  
+  .form-group {
+    width: 100%;  
+    max-width: 400px;
+  }
+  
+  label {
+    display: block; 
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn-primary {
+    display: block; 
+    margin-top: 1rem;
+  }

@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "URLnet",
+    "version": "0.0.1",
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "My Extension"
+    },
+    "description": "URLnet is a browser extension that detect whether phising or not without having to click on the link.",
+     "host_permissions": [
+        "https://*/*", 
+        "http://*/*"
+    ],
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*/*"],
+            "js": ["scripts/content.js"]
+        }
+    ]
+}
